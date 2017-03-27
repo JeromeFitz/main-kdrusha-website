@@ -5,5 +5,5 @@ import './index.css';
 
 ReactDOM.render(
   <Nav />,
-  document.getElementByClass('navbar')
+  document.querySelector('.navbar')
 );

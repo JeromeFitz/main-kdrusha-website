@@ -1,7 +1,8 @@
 body {
   margin: 0 auto;
   padding: 0 auto;
-  max-width: 662.5px;
+  background-color: #000;
+  max-width: 662.5%;
   font-family: sans-serif;
 }
 
@@ -22,16 +23,18 @@ body {
 
 .logo {
   float: left;
+  width: 5rem;
   padding: 9px;
 }
 
 .header {
   float: right;
-  padding: 2em;
+  /*padding: 2em;*/
 }
 
 .header li {
-  float: right;
+  float: left;
+  padding: 0 2rem;
   list-style: none;
 }
 

@@ -6,7 +6,6 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="navbar">
           <img src={logo} className="logo" alt="logo" />
 
           <ul className="header">
@@ -24,7 +23,6 @@ class Nav extends React.Component {
             <li><a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
           </div>
-        </div>
       </div>
     );
   }
