@@ -2,7 +2,7 @@
 
 Cool Thoughts & Reference of Brandon Powell.
 
-##Get Started
+#Get Started
 
 ```
 git clone https://github.com/brandonpowell/main-kdrusha-website
@@ -16,13 +16,14 @@ npm start
 Then open http://localhost:3000/ to see your app. When you’re ready to deploy to production, create a minified bundle with npm run build.
 ```
 
-##Dependencies
+#Dependencies
 
 Currently requires knowledge of:
 
 ```
 HTML
 CSS
+SASS
 JavaScript (ES2016+)
 React
 ```
