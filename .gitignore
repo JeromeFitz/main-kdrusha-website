@@ -7,7 +7,9 @@
 # production
 /build
 
+
 # misc
+.prepros-6.config
 .DS_Store
 .env
 npm-debug.log*

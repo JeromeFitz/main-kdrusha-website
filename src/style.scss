@@ -4,12 +4,14 @@ body {
   border-radius: 10px;
   background-color: #000;
   max-width: 662.5%;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 .navbar {
   background: black;
   width: 100%;
-  height: 5em; }
+  height: 5em;
+}
 
 .mobile-menu-btn {
   font-size: 14px;
@@ -17,30 +19,38 @@ body {
   display: none;
   float: right;
   cursor: pointer;
-  color: white; }
+  color: white;
+}
 
 .logo {
   float: left;
   width: 5rem;
-  padding: 9px; }
+  padding: 9px;
+}
 
 .header {
   float: right;
-  /*padding: 2em;*/ }
+  /*padding: 2em;*/
+}
 
 .header {
-  float: right; }
-  .header li {
+  float: right;
+  li {
     float: left;
     padding: 0 2rem;
-    list-style: none; }
-  .header a {
+    list-style: none;
+  }
+  a {
     text-decoration: none;
-    color: white; }
-  .header .social-media-icons {
+    color: white;
+  }
+  .social-media-icons {
     padding: 9px;
-    float: right; }
-    .header .social-media-icons li {
+    float: right;
+    li {
       float: right;
       font-size: 10px;
-      color: white; }
+      color: white;
+    }
+  }
+}
