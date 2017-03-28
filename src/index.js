@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './Nav';
-import Hero from './Hero'
+import Hero from './Hero';
+import Playlist from './Playlist';
+import About from './About';
+import Gallery from './Gallery';
 import './index.css';
 
 ReactDOM.render(
@@ -14,7 +17,17 @@ ReactDOM.render(
   document.querySelector('.hero')
 );
 
-ReactDom.render(
+ReactDOM.render(
   <Playlist />,
-  document.querySelector('.home-player')
+  document.querySelector('.homeplayer')
+);
+
+ReactDOM.render(
+  <About />,
+  document.querySelector('.boxabout')
+);
+
+ReactDOM.render(
+  <Gallery />,
+  document.querySelector('.boxgallery')
 );

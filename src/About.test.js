@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hero from './Hero';
+import Hero from './About';
 
 it('renders without crashing', () => {
-  const hero = document.createElement('hero');
+  const boxabout = document.createElement('boxabout');
   ReactDOM.render(<App />, div);
 });

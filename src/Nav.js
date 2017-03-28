@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './logo.svg';
-// import About from './About';
 import './style.css';
 
 export default class Nav extends React.Component {

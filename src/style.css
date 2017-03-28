@@ -9,8 +9,9 @@ body {
 .navbar {
   background: black;
   border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #212121;
   width: 100%;
-  height: 5em; }
+  height: 5.2em; }
 
 .mobile-menu-btn {
   font-size: 14px;
@@ -26,12 +27,14 @@ body {
   padding: 9px; }
 
 .header {
-  float: right; }
+  float: right;
+  margin: 27px 0px; }
   .header li {
     float: left;
     padding: 0 2rem;
     list-style: none; }
   .header a {
+    font-size: x-large;
     text-decoration: none;
     color: white; }
   .header .social-media-icons {
@@ -67,3 +70,53 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+.boxabout {
+  background: black;
+  margin-top: 1em;
+  padding: 20px;
+  width: 30.8%; }
+  .boxabout .aboutartist p {
+    color: white;
+    text-align: justify;
+    font-size: larger;
+    line-height: 28px; }
+  .boxabout .aboutartist .imageHere {
+    background-color: red;
+    width: 520px;
+    height: 569px; }
+  .boxabout .aboutartist .bioTitle {
+    font-size: 92px;
+    color: white; }
+
+.inlinebox {
+  display: inline-block; }
+
+.boxgallery {
+  margin: 1em; }
+  .boxgallery .titlebox {
+    background-color: #d4af37;
+    width: 100%;
+    height: 16px;
+    padding: 26px;
+    text-transform: uppercase;
+    color: white; }
+    .boxgallery .titlebox .titlegallery {
+      margin: 0;
+      float: left; }
+    .boxgallery .titlebox .titleallimage {
+      margin: 0;
+      float: right; }
+
+.audio-player-wrapper {
+  background-color: black;
+  width: 100%;
+  height: 3em; }
+  .audio-player-wrapper .audio-player-controls {
+    background: #e3e3e3;
+    height: 1em;
+    width: 100%; }
+    .audio-player-wrapper .audio-player-controls .audio-player-progress {
+      background: #d4af37;
+      width: 50px;
+      height: 1em; }

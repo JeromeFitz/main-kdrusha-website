@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './Playlist';
+import Playlist from './Playlist';
 
 it('renders without crashing', () => {
-  const hero = document.createElement('home-player');
+  const homeplayer = document.createElement('homeplayer');
   ReactDOM.render(<App />, div);
 });
