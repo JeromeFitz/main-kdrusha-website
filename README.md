@@ -22,8 +22,12 @@ Currently requires knowledge of:
 
 ```
 HTML
+
 CSS
+
 SASS
+
 JavaScript (ES2016+)
+
 React
 ```
