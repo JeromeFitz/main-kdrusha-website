@@ -81,11 +81,14 @@ body {
 
 .boxabout {
   background: black;
+  width: 70%;
   margin-top: 1em;
   padding: 20px;
-  width: 30.8%;
   .aboutartist {
-    p {
+    display: flex;
+    .bio {
+      width: 52%;
+      padding: 20px;
       color: white;
       text-align: justify;
       font-size: larger;
@@ -98,21 +101,21 @@ body {
     }
 
     .bioTitle {
-      font-size: 92px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 1em 0;
+      font-size: 49pt;
       color: white;
     }
   }
 }
 
-.inlinebox {
-  display: inline-block;
-}
-
 .boxgallery {
-  margin: 1em;
+  flex: 1;
   .titlebox {
     background-color: #d4af37;
-    width: 100%;
+    margin-top: 1em;
     height: 16px;
     padding: 26px;
     text-transform: uppercase;

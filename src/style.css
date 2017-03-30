@@ -73,30 +73,39 @@ body {
 
 .boxabout {
   background: black;
+  width: 70%;
   margin-top: 1em;
-  padding: 20px;
-  width: 30.8%; }
-  .boxabout .aboutartist p {
-    color: white;
-    text-align: justify;
-    font-size: larger;
-    line-height: 28px; }
-  .boxabout .aboutartist .imageHere {
-    background-color: red;
-    width: 520px;
-    height: 569px; }
-  .boxabout .aboutartist .bioTitle {
-    font-size: 92px;
-    color: white; }
-
-.inlinebox {
-  display: inline-block; }
+  padding: 20px; }
+  .boxabout .aboutartist {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .boxabout .aboutartist .bio {
+      width: 52%;
+      padding: 20px;
+      color: white;
+      text-align: justify;
+      font-size: larger;
+      line-height: 28px; }
+    .boxabout .aboutartist .imageHere {
+      background-color: red;
+      width: 520px;
+      height: 569px; }
+    .boxabout .aboutartist .bioTitle {
+      font-family: 'Montserrat Alternates', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 1em 0;
+      font-size: 49pt;
+      color: white; }
 
 .boxgallery {
-  margin: 1em; }
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
   .boxgallery .titlebox {
     background-color: #d4af37;
-    width: 100%;
+    margin-top: 1em;
     height: 16px;
     padding: 26px;
     text-transform: uppercase;
