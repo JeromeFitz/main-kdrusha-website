@@ -4,8 +4,8 @@ import Nav from './Nav';
 import Hero from './Hero';
 import Playlist from './Playlist';
 import About from './About';
-import Gallery from './Gallery';
 import Song from './Song';
+import News from './News';
 import './index.css';
 
 ReactDOM.render(
@@ -29,11 +29,11 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <Gallery />,
-  document.querySelector('.boxgallery')
+  <Song />,
+  document.querySelector('.boxsongs')
 );
 
 ReactDOM.render(
-  <Song />,
-  document.querySelector('.boxsongs')
+  <News />,
+  document.querySelector('.boxnews')
 );

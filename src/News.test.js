@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hero from './Gallery';
+import News from './News';
 
 it('renders without crashing', () => {
-  const boxgallery = document.createElement('boxgallery');
+  const homeplayer = document.createElement('boxnews');
   ReactDOM.render(<App />, div);
 });

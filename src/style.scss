@@ -39,7 +39,9 @@ body {
     list-style: none;
   }
   a {
-    font-size: x-large;
+    font-size: 14pt;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
   }
@@ -62,14 +64,19 @@ body {
   width: 100%;
   height: 781px;
   .welcome-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17pt;
+    letter-spacing: 1px;
     color: white;
-    font-size: 1em;
     position: absolute;
     top: 52%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
   .artist-name {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 74pt;
+    font-weight: bold;
     color: white;
     position: absolute;
     font-size: 6em;
@@ -79,59 +86,57 @@ body {
   }
 }
 
-.boxabout {
-  background: black;
-  width: 70%;
-  margin-top: 1em;
-  padding: 20px;
-  .aboutartist {
-    display: flex;
-    .bio {
-      width: 52%;
-      padding: 20px;
-      color: white;
-      text-align: justify;
-      font-size: larger;
-      line-height: 28px;
-    }
-    .imageHere {
-      background-color: red;
-      width: 520px;
-      height: 569px;
-    }
-
-    .bioTitle {
-      font-family: 'Montserrat Alternates', sans-serif;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 1em 0;
-      font-size: 49pt;
-      color: white;
-    }
-  }
-}
-
-.boxgallery {
-  flex: 1;
-  .titlebox {
-    background-color: #d4af37;
+  .boxabout {
     margin-top: 1em;
-    height: 16px;
-    padding: 26px;
-    text-transform: uppercase;
-    color: white;
-    .titlegallery {
-      margin: 0;
-      float: left;
-    }
-
-    .titleallimage {
-      margin: 0;
-      float: right;
+    .row {
+      display: flex;
+      .gallery-section {
+        background-color: #d4af37;
+        margin-left: 1.3em;
+        height: 16px;
+        padding: 26px;
+        text-transform: uppercase;
+        color: white;
+        .titlegalleryleft {
+          float: left;
+        }
+        .titlegalleryright {
+          float: right;
+        }
+      }
+      .aboutartist {
+        display: flex;
+        padding: 1.3em;
+        background: black;
+        .bio {
+          padding-left: 1.3em;
+          width: 52%;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: lighter;
+          font-size: larger;
+          line-height: 28px;
+          color: white;
+          .bioTitle {
+            font-family: 'Montserrat Alternates', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 37px 0;
+            font-size: 49pt;
+            color: white;
+          }
+        }
+        .imageHere {
+          float: 1;
+          background-color: red;
+          width: 520px;
+          height: 685px;
+        }
+      }
+      .col-inline {
+        flex: 2;
     }
   }
 }
-
 .boxsongs {
   background-color: black;
   height: 12em;
@@ -150,6 +155,30 @@ body {
     text-transform: uppercase;
     margin: 0;
     color: white;
+  }
+}
+
+.boxnews {
+  margin: 1em 0px;
+  .row {
+    display: flex;
+    .divder {
+      margin: 0 1.3em;
+    }
+    .tab-section {
+      flex: 3;
+      background-color: #d4af37;
+      height: 16px;
+      padding: 26px;
+      text-transform: uppercase;
+      color: white;
+      .titlegalleryleft {
+        float: left;
+      }
+      .titlegalleryright {
+        float: right;
+      }
+    }
   }
 }
 .audio-player-wrapper {
