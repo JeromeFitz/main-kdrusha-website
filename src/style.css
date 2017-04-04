@@ -176,18 +176,52 @@ body {
 
 .boxvideos {
   background-color: black;
-  height: 12em;
-  margin-top: 1em;
-  padding: 1em; }
+  height: auto;
+  margin-top: 1em; }
   .boxvideos .left-side {
     float: left;
     font-size: 22px;
+    padding: 1em 1em 0 1em;
     text-transform: uppercase;
     margin: 0;
     color: white; }
   .boxvideos .right-side {
     float: right;
     font-size: 22px;
+    padding: 1em 1em 0 1em;
     text-transform: uppercase;
     margin: 0;
     color: white; }
+
+.ablum-song-list {
+  clear: both;
+  margin: 0 auto;
+  padding: 25px 0px;
+  width: 95%; }
+  .ablum-song-list li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 1rem; }
+    .ablum-song-list li img {
+      width: 166px;
+      height: 166px; }
+
+.arrow-left {
+  background-color: #d4af37;
+  position: relative;
+  float: left;
+  top: -134px;
+  cursor: pointer;
+  left: -25px;
+  height: 50px;
+  width: 50px; }
+
+.arrow-right {
+  background-color: #d4af37;
+  position: relative;
+  float: right;
+  top: -134px;
+  cursor: pointer;
+  right: -25px;
+  height: 50px;
+  width: 50px; }
