@@ -10,9 +10,9 @@ export default class Playlist extends React.Component {
         </div>
 
       <span className="audio-player-button-wrappers">
-          <a role="button" className="audio-player-button small icon-backward"><i className="fa fa-backward" aria-hidden="true"></i></a>
-          <a role="button" className="audio-player-button audio-player-place-pause-button icon-play"><i className="fa fa-play" aria-hidden="true"></i></a>
-          <a role="button" className="audio-player-button small icon-forward"><i className="fa fa-forward" aria-hidden="true"></i></a>
+          <a role="button" className="audio-player-button small icon-backward"></a>
+          <a role="button" className="audio-player-button audio-player-place-pause-button icon-play"></a>
+          <a role="button" className="audio-player-button small icon-forward"></a>
       </span>
 
       <div className="audio-player-controls">
