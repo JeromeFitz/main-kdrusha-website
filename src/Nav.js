@@ -6,7 +6,7 @@ export default class Nav extends React.Component {
   render() {
     return (
       <div className="wrapper">
-          <img src={logo} className="logo" alt="logo" />
+          <div className="logo">KD Rusha</div>
 
           <ul className="header">
              <li><a href="/" title="Home">Home</a></li>

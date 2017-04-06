@@ -12,6 +12,7 @@ body {
 
 .navbar {
   background: black;
+  margin: 0;
   border-radius: 10px 10px 0px 0px;
   border-bottom: 1px solid #212121;
   width: 100%;
@@ -29,7 +30,7 @@ body {
 
 .logo {
   float: left;
-  width: 5rem;
+  width: 8rem;
   padding: 9px;
 }
 
@@ -76,7 +77,7 @@ body {
     letter-spacing: 1px;
     color: white;
     position: absolute;
-    top: 52%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
@@ -87,7 +88,7 @@ body {
     color: white;
     position: absolute;
     font-size: 6em;
-    top: 61%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
@@ -124,6 +125,7 @@ body {
           line-height: 28px;
           color: white;
           .line {
+            margin: 24px 0px;
             background-color: #d4af37;
             width: 100%;
             height: 1px;
@@ -231,7 +233,6 @@ body {
     img {
       width:  166px;
       height: 166px;
-      // position: fixed;
     }
   }
 }
