@@ -1,39 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './Nav';
-import Hero from './Hero';
-import Playlist from './Playlist';
-import About from './About';
-import Song from './Song';
-import News from './News';
-import Video from './Video';
-import './index.css';
+
+const tracks = [
+  {
+    title: 'Some track'
+  },
+  {
+    title: 'Some other track'
+  }
+];
 
 ReactDOM.render(
-  <Nav />,
-  document.querySelector('.navbar')
+  <div>
+    {
+      tracks.map((track) => {
+        return <div className="track">{track.title}</div>;
+      })
+    }
+  </div>,
+  document.querySelector('.container')
 );
-ReactDOM.render(
-  <Hero />,
-  document.querySelector('.hero')
-);
-ReactDOM.render(
-  <Playlist />,
-  document.querySelector('.homeplayer')
-);
-ReactDOM.render(
-  <About />,
-  document.querySelector('.boxabout')
-);
-ReactDOM.render(
-  <Song />,
-  document.querySelector('.boxsongs')
-);
-ReactDOM.render(
-  <News />,
-  document.querySelector('.boxnews')
-);
-ReactDOM.render(
-  <Video />,
-  document.querySelector('.boxvideos')
-);
+
+module.hot.accept();

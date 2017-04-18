@@ -1,20 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './style.css';
+// import './style.css';
 
 export default class Nav extends React.Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className="navbar">
           <div className="logo">KD Rusha</div>
-
-          <ul className="header">
-             <li><a href="/" title="Home">Home</a></li>
-             <li><a href="/news" title="News">News</a></li>
-             <li><a href="/events" title="Events">Events</a></li>
-             <li><a href="/shops" title="Shop">Shop</a></li>
-          </ul>
-
 
           <div className="social-media-icons">
             <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
