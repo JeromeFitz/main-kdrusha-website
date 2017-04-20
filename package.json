@@ -1,23 +1,21 @@
 {
-  "name": "kd-rusha-ebsite",
+  "name": "kdrusha-website-v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-fontawesome": "^1.5.0",
-    "react-router": "^4.0.0"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-hot-loader": "^1.3.1",
-    "react-scripts": "0.9.5",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2"
+    "chai": "^3.5.0",
+    "enzyme": "^2.8.2",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
+
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js --reporter spec  --slow  --recursive ./src/components/**/*spec.js"
 }
