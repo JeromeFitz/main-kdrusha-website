@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -17,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test":  "react-scripts test mocha --require ./src/test/setup.js --reporter spec  --slow  --recursive ./src/components/**/*spec.js --env=jsdom",
+    "test": "react-scripts test mocha --require ./src/test/setup.js --reporter spec  --slow  --recursive ./src/components/**/*spec.js --env=jsdom",
     "watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
   }
