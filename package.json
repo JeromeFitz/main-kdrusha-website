@@ -17,8 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:react":  "react-scripts test mocha --require ./src/test/setup.js --reporter spec  --slow  --recursive ./src/components/**/*spec.js --env=jsdom",
-    "test:watch": "npm run test -- --watch",
+    "test":  "react-scripts test mocha --require ./src/test/setup.js --reporter spec  --slow  --recursive ./src/components/**/*spec.js --env=jsdom",
+    "watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
   }
 }
