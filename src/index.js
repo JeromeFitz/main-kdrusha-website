@@ -22,5 +22,5 @@ ReactDOM.render(
   <Provider store={store}>
     <Stream />
   </Provider>,
-  document.getElementById('app')
+  document.getElementById('container')
 );
