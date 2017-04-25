@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import configureStore from './stores/configureStore';
-import * as actions from './actions';
-import Stream from './components/Stream';
+import configureStore from '../src/soundcloud/stores/configureStore';
+import * as actions from '../src/soundcloud/actions';
+import Stream from '../src/soundcloud/components/Stream';
 
 const tracks = [
   {
