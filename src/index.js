@@ -6,6 +6,9 @@ import Player from '../components/Player';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Tracks from '../components/Tracks';
+import Events from '../components/Events';
+import Videos from '../components/Videos';
+import Footer from '../components/Footer';
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +20,9 @@ export default class App extends React.Component {
         <About />
         <Gallery />
         <Tracks />
+        <Events />
+        <Videos />
+        <Footer />
       </div>
     );
   }
