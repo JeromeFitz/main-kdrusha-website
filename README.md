@@ -7,4 +7,4 @@ First website that I integrated the Soundcloud, YouTube, and Instagram API. I gi
 
 
 
-Please note: NO Soundcloud, Instagram, and Youtube API's key is present in auth.js. If you wish to see the app in action, you'll have to generate your own keys at [Google](https://console.developers.google.com) [SoundCloud](https://developers.soundcloud.com), and [Instagram](https://www.instagram.com/developer/) websites.
+Please note: NO Soundcloud, Instagram, and Youtube API's key is present in auth.js. If you wish to see the app in action, you'll have to generate your own keys at [Google](https://console.developers.google.com), [SoundCloud](https://developers.soundcloud.com), and [Instagram](https://www.instagram.com/developer/) websites.
