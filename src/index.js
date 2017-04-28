@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { configureStore } from '../src/soundcloud/stores/configureStore';
+import  configureStore  from '../src/soundcloud/stores/configureStore';
 import * as actions from '../src/soundcloud/actions';
 import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks that render
 import Nav from '../components/Nav';
@@ -14,19 +14,18 @@ import Videos from '../components/Videos';
 import Footer from '../components/Footer';
 
 const store = configureStore();
-conl
-store.dispatch(actions.setTracks(tracks));
+store.dispatch(actions.setTracks(tracks));// This is store the information to the Tracks
 
-export const tracks = [ // Tracks that getting render on the page
+export const tracks = [
+
   {
     title: 'Some track'
   },
   {
     title: 'Some other track'
   }
+
 ];
-
-
 
 export default class App extends React.Component {
   render() {
@@ -46,4 +45,4 @@ export default class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(<App />, document.getElementById('container'))
