@@ -13,7 +13,7 @@ Please note: NO Soundcloud, Instagram, and Youtube API's key is present in auth.
 ## Get Started
 
 ```
-git clone https://github.com/fromcortes/main-kdrusha-website.git
+git clone https://github.com/brandonpowell/main-kdrusha-website.git
 cd mocha
 npm install (first time only)
 npm start
