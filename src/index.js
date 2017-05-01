@@ -4,9 +4,9 @@ import { Provider } from 'react-redux';
 import  configureStore  from '../src/soundcloud/stores/configureStore';
 import * as actions from '../src/soundcloud/actions';
 import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks that render
-import Nav from '../components/Nav';
-import Hero from '../components/Hero';
-import About from '../components/About';
+import Nav from '../src/components/Nav';
+import Hero from '../src/components/Hero';
+import About from '../src/components/About';
 
 export const tracks = [
   {
@@ -27,9 +27,10 @@ export default class App extends React.Component {
         <Nav />
         <Hero />
         <About />
-        <Provider store={store}> <Stream /> </Provider>
+        <Stream />
       </div>
     );
   }
 }
-ReactDOM.render(<App />, document.getElementById('main'))
+
+ReactDOM.render(<App />, <Provider store={store} />, document.getElementById('main'));
