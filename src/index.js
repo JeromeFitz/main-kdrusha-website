@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import  configureStore  from '../src/soundcloud/stores/configureStore';
+import configureStore  from '../src/soundcloud/stores/configureStore';
 import * as actions from '../src/soundcloud/actions';
 import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks that render
 import Nav from '../src/components/Nav';
@@ -27,10 +27,12 @@ export default class App extends React.Component {
         <Nav />
         <Hero />
         <About />
-        <Stream />
+        <Provider store={store}>
+          <Stream />
+        </Provider>
       </div>
     );
   }
 }
 
-ReactDOM.render(<App />, <Provider store={store} />, document.getElementById('main'));
+ReactDOM.render(<App />, document.getElementById('main'));
