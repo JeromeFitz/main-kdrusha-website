@@ -7,6 +7,10 @@ import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks
 import Nav from '../src/components/Nav';
 import Hero from '../src/components/Hero';
 import About from '../src/components/About';
+import LightBox from 'react-lightbox-component';
+import VideoList from '../src/components/video_list';
+import VideoDetail from '../src/components/video_detail';
+const API_KEY = 'YouTube API Key Here'; // YouTube API Key
 
 export const tracks = [
   {
@@ -21,6 +25,22 @@ const store = configureStore();
 store.dispatch(actions.setTracks(tracks));// This is store the information to the Tracks
 
 export default class App extends React.Component {
+  constructor(props) {
+  super(props);
+
+  this.state = {
+    videos: [],
+    selectedVideo: null
+   };
+
+   LightBox({key: API_KEY}, (videos) => {
+     this.setState({
+       videos: videos,
+       selectedVideo: videos
+      });
+  });
+}
+
   render() {
     return(
       <div>
@@ -30,6 +50,10 @@ export default class App extends React.Component {
         <Provider store={store}>
           <Stream />
         </Provider>
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+          videos={this.state.videos} />
       </div>
     );
   }
