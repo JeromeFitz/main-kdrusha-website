@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoListItem from './video_list_item';
+import VideoListItem from '../youtube/video_list_item';
 
   const VideoList = (props) => {
     // console.log(VideoList);

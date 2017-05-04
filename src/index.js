@@ -8,8 +8,8 @@ import Nav from '../src/components/Nav';
 import Hero from '../src/components/Hero';
 import About from '../src/components/About';
 import LightBox from 'react-lightbox-component';
-import VideoList from '../src/components/video_list';
-import VideoDetail from '../src/components/video_detail';
+import VideoList from '../src/youtube/components/video_list';
+import VideoDetail from '../src/youtube/components/video_detail';
 const API_KEY = 'YouTube API Key Here'; // YouTube API Key
 
 export const tracks = [
