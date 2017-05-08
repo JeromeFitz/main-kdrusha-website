@@ -7,10 +7,14 @@ import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks
 import Nav from '../src/components/Nav';
 import Hero from '../src/components/Hero';
 import About from '../src/components/About';
-import LightBox from 'react-lightbox-component';
+// import YTSearch from 'youtube-api-search';
+import YouTubeV3 from 'youtube-api';
 import VideoList from '../src/youtube/video_list';
-import VideoDetail from '../src/youtube/video_detail';
-const API_KEY = 'YouTube API Key Here'; // YouTube API Key
+import VideoLightBox from '../src/youtube/video_lightbox';
+
+const  API_KEY_YouTube = 'Here API'; // YouTube API Key
+const  KD_RUSHA_YouTube = 'Client ID'; // Youtube Client ID
+
 
 export const tracks = [
   {
@@ -33,10 +37,12 @@ export default class App extends React.Component {
     selectedVideo: null
    };
 
-   LightBox({key: API_KEY}, (videos) => {
+   YouTubeV3({key: API_KEY_YouTube, ClientID: KD_RUSHA_YouTube  }, (videos) => {
+      // console.log(videos);
      this.setState({
+       type: "oauth",
        videos: videos,
-       selectedVideo: videos
+       selectedVideo: videos[0]
       });
   });
 }
@@ -50,7 +56,7 @@ export default class App extends React.Component {
         <Provider store={store}>
           <Stream />
         </Provider>
-        <VideoDetail video={this.state.selectedVideo} />
+        <VideoLightBox video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
           videos={this.state.videos} />
@@ -59,4 +65,4 @@ export default class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('main'));
+ReactDOM.render(<App />, document.querySelector('.main'));

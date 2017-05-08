@@ -2,7 +2,7 @@ import React from 'react';
 import VideoListItem from '../youtube/video_list_item';
 
   const VideoList = (props) => {
-    // console.log(VideoList);
+    // console.log(props);
    const videoItems = props.videos.map((video) => {
      return (
        <VideoListItem
@@ -13,7 +13,7 @@ import VideoListItem from '../youtube/video_list_item';
     });
 
       return (
-          <ul className="col-md-4 list-group">
+          <ul className="youtube-thumbnail">
              {videoItems}
           </ul>
       );

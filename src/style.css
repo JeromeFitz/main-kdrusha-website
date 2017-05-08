@@ -10,8 +10,7 @@ body {
 
 
 /* Lightbox Style */
-
-.video-lightbox img{
+.video-lightbox iframe{
 	height: 80vh;
 	width: auto;
 	margin: 50px auto;
