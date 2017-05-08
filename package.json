@@ -4,15 +4,13 @@
   "private": false,
   "dependencies": {
     "child-process": "^1.0.2",
-    "googleapis": "^19.0.0",
     "js-beautify": "^1.6.12",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.1",
-    "swig": "^1.4.2",
-    "youtube-api": "^2.0.8"
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",

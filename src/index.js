@@ -7,14 +7,10 @@ import Stream from '../src/soundcloud/components/Stream'; // This are the Tracks
 import Nav from '../src/components/Nav';
 import Hero from '../src/components/Hero';
 import About from '../src/components/About';
-// import YTSearch from 'youtube-api-search';
-import YouTubeV3 from 'youtube-api';
+import YTSearch from 'youtube-api-search';
 import VideoList from '../src/youtube/video_list';
 import VideoLightBox from '../src/youtube/video_lightbox';
-
-const  API_KEY_YouTube = 'Here API'; // YouTube API Key
-const  KD_RUSHA_YouTube = 'Client ID'; // Youtube Client ID
-
+const  API_KEY_YouTube = ''; // YouTube API Key
 
 export const tracks = [
   {
@@ -37,10 +33,9 @@ export default class App extends React.Component {
     selectedVideo: null
    };
 
-   YouTubeV3({key: API_KEY_YouTube, ClientID: KD_RUSHA_YouTube  }, (videos) => {
+   YTSearch({key: API_KEY_YouTube, term: 'KD Rusha' }, (videos) => {
       // console.log(videos);
      this.setState({
-       type: "oauth",
        videos: videos,
        selectedVideo: videos[0]
       });
