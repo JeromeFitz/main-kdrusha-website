@@ -1,4 +1,4 @@
-## KD Rusha Main Website
+## KD Rusha Website
 
 
 First website that I integrated the Soundcloud, YouTube, and Instagram API. I give credit to [Robin Wieruch](https://www.robinwieruch.de/the-soundcloud-client-in-react-redux/) and [Stephen Grider](https://www.udemy.com/react-redux) to whom I learned how to integrated them into my web applications.
