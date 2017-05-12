@@ -10,7 +10,10 @@ import About from '../src/components/About';
 import YTSearch from 'youtube-api-search';
 import VideoList from '../src/youtube/video_list';
 import VideoLightBox from '../src/youtube/video_lightbox';
-const  API_KEY_YouTube = ''; // YouTube API Key
+import Instafeed from 'react-instafeed';
+import Gallery from '../src/instagram/image_feed';
+const  API_KEY_YouTube = '[GOES HERE]'; // YouTube API Key
+// const  API_KEY_Instagram = 'https://api.instagram.com/v1/users/kdrushamusic/?access_token=47618d1438ca41b081944b6b2ff83125';
 
 export const tracks = [
   {
@@ -48,6 +51,7 @@ export default class App extends React.Component {
         <Nav />
         <Hero />
         <About />
+        <Gallery />
         <Provider store={store}>
           <Stream />
         </Provider>
@@ -60,4 +64,4 @@ export default class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.querySelector('.main'));
+ReactDOM.render(<App source="https://gist.githubusercontent.com/mgcm/4d4ddf687b1399b87de4/raw/530bbf6f6665c9cf9263fea9c6577f85b3bf280b/instagram.json" />, document.querySelector('.main'));
