@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class Gallery extends Component {
+export default class Instafeed extends Component {
   constructor(props, context) {
     super(props, context);
 
@@ -21,26 +21,16 @@ export default class Gallery extends Component {
       // Below provided is the default as an example
       // Anything you put here will be take precedence
       const instafeedTemplate =
-         `<div class="insta-container">
-            <div class="head_title_box">
-              <div class="title_name">
-                <p>Gallery</p>
-              </div>
-
-              <a class="client_link" target="_blank"><p>All Images</p></a>
-            </div>
-
-            <a href="{{link}}" target="_blank" class="instafeed__item">
+         `<a href="{{link}}" target="_blank" class="instafeed__item">
               <img class="instafeed__item__background" src="{{image}}" />
-            </a>
-          </div>`;
+          </a>`;
       const instafeed = <Instafeed
-        userId='[GOES-HERE]'
-        clientId='[GOES-HERE]'
-        accessToken='[GOES-HERE]'
+        userId={`${INSTAGRAM_USER_ID}`}
+        clientId={`${INSTAGRAM_CLIENT_ID}`}
+        accessToken={`${INSTAGRAM_ACCESS_TOKEN}`}
         target='instafeed'
         resolution='standard_resolution'
-        limit='8'
+        limit='1'
         sortBy='most-recent'
         ref='instafeed'
         template={instafeedTemplate}
@@ -53,10 +43,13 @@ export default class Gallery extends Component {
 
   render() {
     return (
-      {
-        this.
-        renderInstafeed()
-      }
+      <div className="insta-container">
+         <div className="head_title_box">
+           <div className="title_name"><p>Gallery</p></div>
+         </div>
+
+         <div id='instafeed'>{this.renderInstafeed()}</div>
+       </div>
     )
   };
 }
