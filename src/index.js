@@ -10,7 +10,6 @@ import About from '../src/components/About';
 import YTSearch from 'youtube-api-search';
 import VideoList from '../src/youtube/video_list';
 import VideoLightBox from '../src/youtube/video_lightbox';
-import Instafeed from 'react-instafeed';
 import Gallery from '../src/instagram/image_feed';
 const  API_KEY_YouTube = '47618d1438ca41b081944b6b2ff83125'; // YouTube API Key
 
@@ -51,9 +50,7 @@ export default class App extends React.Component {
         <Nav />
         <Hero />
         <About />
-        <Instafeed>
-            <Gallery />
-        </Instafeed>
+        <Gallery />
         <Provider store={store}>
           <Stream />
         </Provider>
